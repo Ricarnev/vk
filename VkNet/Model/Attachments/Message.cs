@@ -287,6 +287,7 @@ namespace VkNet.Model
 		/// Содержит количество непрочитанных сообщений в текущем диалоге (если это
 		/// значение было возвращено, иначе 0)
 		/// </summary>
+		[JsonProperty("unread_count")]
 		public int Unread { get; set; }
 
 		/// <summary>
@@ -297,11 +298,13 @@ namespace VkNet.Model
 		/// <summary>
 		/// Идентификатор последнего прочитанного сообщения текущим пользователем
 		/// </summary>
+		[JsonProperty("in_read")]
 		public ulong? InRead { get; set; }
 
 		/// <summary>
 		/// Идентификатор последнего прочитанного сообщения собеседником
 		/// </summary>
+		[JsonProperty("out_read")]
 		public ulong? OutRead { get; set; }
 
 		/// <summary>
